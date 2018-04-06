@@ -410,10 +410,6 @@ nav .icon {
     display: inline;
   }
 
-  .shrink {
-    display: inline;
-  }
-
   footer {
     display: flex;
     flex-direction: column;
