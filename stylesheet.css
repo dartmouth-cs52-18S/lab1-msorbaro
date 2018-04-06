@@ -17,6 +17,28 @@ body {
   justify-content: center;
 }
 
+/*learned this from demo provided on css hacks*/
+input[type=checkbox] {
+   position: absolute;
+  opacity: 0;
+}
+input[type=checkbox]:checked + ul a{
+  display: block;
+}
+
+input[type=checkbox]:checked + nav ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type=checkbox]:checked + nav ul li:nth-child(even){
+  display: block;
+  padding: 2vh;
+}
+
+
+
 .front-info {
   border: 5vh solid rgba(255, 255, 255, 0.75);
   border-radius: 5vh;
@@ -354,6 +376,7 @@ nav .icon {
     font-size: 5em;
 
   }
+
   .hide {
     display: none;
   }
@@ -413,12 +436,12 @@ nav .icon {
   footer {
     display: flex;
     flex-direction: column;
-
   }
-  .help
-  {
+
+  .help {
     height: 50vh;
   }
+
   .callbutton{
     margin-top: 55vh;
   }
