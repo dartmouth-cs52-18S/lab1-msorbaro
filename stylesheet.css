@@ -419,5 +419,9 @@ nav .icon {
     flex-direction: column;
 
   }
+  .help
+  {
+    height: 50vh;
+  }
 
 }
