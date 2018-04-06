@@ -1,3 +1,5 @@
+/* Morgan Sorbaro CSS code */
+
 body {
   font-family: arial;
   margin: 0;
@@ -17,15 +19,9 @@ body {
   justify-content: center;
 }
 
-/*learned this from demo provided on css hacks*/
-input[type=checkbox] {
-   position: absolute;
-  opacity: 0;
-}
-input[type=checkbox]:checked + ul a{
-  display: block;
-}
+/*nav CSS*/
 
+/*learned this from demo provided on css hacks*/
 input[type=checkbox]:checked + nav ul{
   display: flex;
   flex-direction: column;
@@ -38,7 +34,45 @@ input[type=checkbox]:checked + nav ul li:nth-child(even){
 }
 
 
+nav .icon {
+  display: none;
+}
 
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-around;
+  margin-right: 2vw;
+  flex-wrap: wrap;
+}
+nav {
+  background-color: white;
+  color: rgb(68, 184, 167);
+}
+
+nav a:link {
+  color: rgb(68, 184, 167);
+  text-decoration: none;
+}
+nav a:visited {
+  color: rgb(68, 184, 167);
+  text-decoration: none;
+}
+nav a:hover {
+  color: rgb(255, 226, 32);
+  text-decoration: none;
+}
+
+nav ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+
+}
+
+/*front page CSS*/
 .front-info {
   border: 5vh solid rgba(255, 255, 255, 0.75);
   border-radius: 5vh;
@@ -74,41 +108,56 @@ p {
   font-style: italic;
 }
 
-
-nav ul li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5em;
-
-}
-
-nav ul {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  justify-content: space-around;
-  margin-right: 2vw;
-  flex-wrap: wrap;
-}
-nav {
-  background-color: white;
-  color: rgb(68, 184, 167);
-}
-
-nav a:link {
-  color: rgb(68, 184, 167);
-  text-decoration: none;
-}
-nav a:visited {
-  color: rgb(68, 184, 167);
-  text-decoration: none;
-}
-nav a:hover {
+/*from W3 Schools */
+.button:hover {
+  background-color: rgb(68, 184, 167);
   color: rgb(255, 226, 32);
-  text-decoration: none;
 }
 
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button {
+  width: 18vw;
+  height: 10vh;
+  background-color: rgb(255, 254, 84);
+  border: .5vh solid rgb(68, 184, 167);
+  border-radius: 2vh;
+  font-size: 1.5em;
+  font-style: italic;
+  color: rgb(68, 68, 68);
+}
+
+
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.smaller {
+  display: none;
+}
+
+/*help section CSS*/
 .help {
   background-color: white;
   height: 20vh;
@@ -160,7 +209,7 @@ nav a:hover {
   background-color: rgb(68, 184, 167);
 }
 
-
+/*stores section CSS*/
 .stores {
   width: 100vw;
   height: 60vh;
@@ -192,13 +241,18 @@ nav a:hover {
 }
 
 
+.stores a {
+  display: none;
+}
+
+/*break line */
 .break{
   width: 100vw;
   height: 1vh;
   background-color: rgb(68, 184, 167);
 
 }
-
+/*specials line */
 .specials div {
   display: flex;
   flex-direction: row;
@@ -228,9 +282,6 @@ nav a:hover {
 
 .service {
   height: 39vh;
-  /*background-image: url("images/customer.png");
-  background-size: 100%;
-  background-position: center;*/
 }
 
 .service img {
@@ -249,48 +300,6 @@ input[type=text] {
   border:
 }
 
-.button {
-  width: 18vw;
-  height: 10vh;
-  background-color: rgb(255, 254, 84);
-  border: .5vh solid rgb(68, 184, 167);
-  border-radius: 2vh;
-  font-size: 1.5em;
-  font-style: italic;
-  color: rgb(68, 68, 68);
-}
-
-/*from W3 Schools */
-.button:hover {
-  background-color: rgb(68, 184, 167);
-  color: rgb(255, 226, 32);
-}
-
-
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button:hover span {
-  padding-right: 25px;
-}
-
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
 
 
 footer {
@@ -319,6 +328,14 @@ footer ul {
   font-size: 2em;
 }
 
+input[type=checkbox] {
+   position: absolute;
+  opacity: 0;
+}
+input[type=checkbox]:checked + ul a{
+  display: block;
+}
+
 footer ul li:first-of-type {
   color: rgb(255, 255, 255);
   font-size: 1.25rem;
@@ -337,21 +354,11 @@ footer a:hover {
   text-decoration: none;
 }
 
-nav .icon {
-  display: none;
-}
-
-.smaller {
-  display: none;
-}
-
 .smallfooter{
   display: none;
 }
 
-.stores a {
-  display: none;
-}
+/*biggest screen change size*/
 @media screen and (max-width: 1200px) {
   .help {
     display: flex;
@@ -365,7 +372,7 @@ nav .icon {
 
 }
 
-
+/*middle screen change size*/
 @media screen and (max-width: 1000px) {
   nav li:not(:first-child){
     display: none;
@@ -412,6 +419,7 @@ nav .icon {
 
 }
 
+/*smallest chnage size*/
 @media screen and (max-width: 800px) {
   .callbutton{
     width: 40vw;
