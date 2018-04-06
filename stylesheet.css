@@ -1,0 +1,423 @@
+body {
+  font-family: arial;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.cover {
+  height: 80vh;
+  background-image: url(images/mavisBackground.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.front-info {
+  border: 5vh solid rgba(255, 255, 255, 0.75);
+  border-radius: 5vh;
+  box-shadow: 10vw 10vh 100vh 100vh rgba(255, 255, 255, 0.75) inset;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.front-info h1 {
+  color: rgb(255, 226, 32);
+  font-size: 3.5em;
+  text-shadow: -.07em 0 rgb(68, 184, 167), 0 .07em rgb(68, 184, 167), .07em 0 rgb(68, 184, 167), 0 -.07em rgb(68, 184, 167);
+  margin-bottom: 0%;
+}
+
+.front-info h2 {
+  color: rgb(68, 68, 68);
+  font-style: italic;
+  margin-top: 1.5vh;
+
+}
+
+.midtext{
+   color: rgb(68, 68, 68);
+   font-size: 1.5rem;
+}
+
+
+p {
+  font-size: 2rem;
+  color: rgb(68, 68, 68);
+  font-style: italic;
+}
+
+
+nav ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-around;
+  margin-right: 2vw;
+  flex-wrap: wrap;
+}
+nav {
+  background-color: white;
+  color: rgb(68, 184, 167);
+}
+
+nav a:link {
+  color: rgb(68, 184, 167);
+  text-decoration: none;
+}
+nav a:visited {
+  color: rgb(68, 184, 167);
+  text-decoration: none;
+}
+nav a:hover {
+  color: rgb(255, 226, 32);
+  text-decoration: none;
+}
+
+.help {
+  background-color: white;
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.help div:first-child{
+  height: 13vh;
+  width: 60vw;
+}
+
+.help div:first-child p{
+  font-style: normal;
+  margin-left: 5vw;
+  margin-top: 1.5vh;
+  margin-bottom: -.2vh;
+}
+
+.shrink {
+  font-size: 1.5rem;
+  color: rgb(68, 184, 167);
+
+}
+
+.help div:last-child {
+  height: 15vh;
+  width: 40vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 7vw;
+  flex-wrap: wrap;
+}
+
+.callbutton {
+    border: .5vh solid rgb(68, 184, 167);
+    width: 20vw;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 2vh;
+}
+
+.callbutton:hover {
+  /*border: .5vh solid rgb(68, 184, 167);*/
+  background-color: rgb(68, 184, 167);
+}
+
+
+.stores {
+  width: 100vw;
+  height: 60vh;
+  background-color: rgba(68, 184, 167, .5);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+}
+
+.stores div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.miniheader {
+  color: rgb(255, 226, 32);
+  font-size: 3em;
+  text-shadow: -.07em 0 rgb(68, 184, 167), 0 .07em rgb(68, 184, 167), .07em 0 rgb(68, 184, 167), 0 -.07em rgb(68, 184, 167);
+  margin-left: 5vh;
+}
+
+.stores div img {
+  border: 1vh solid rgb(68, 68, 68);
+  margin-bottom: 2vh;
+}
+
+
+.break{
+  width: 100vw;
+  height: 1vh;
+  background-color: rgb(68, 184, 167);
+
+}
+
+.specials div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.specials h2 {
+  color: rgb(68, 68, 68);
+  font-style: italic;
+  text-align: center;
+  font-size: 2rem;
+}
+.serspec {
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.specials div img{
+  margin: 1vw;
+}
+
+.special div:last-of-type img {
+  margin: 5vw;
+}
+
+.service {
+  height: 39vh;
+  /*background-image: url("images/customer.png");
+  background-size: 100%;
+  background-position: center;*/
+}
+
+.service img {
+  height: 40vh;
+  width: 100vw;
+}
+
+
+
+input[type=text] {
+  width: 18vw;
+  height: 5vh;
+  background-color: rgba(#f9ff8a, 0.78);
+  font-style: italic;
+  text-align: center;
+  border:
+}
+
+.button {
+  width: 18vw;
+  height: 10vh;
+  background-color: rgb(255, 254, 84);
+  border: .5vh solid rgb(68, 184, 167);
+  border-radius: 2vh;
+  font-size: 1.5em;
+  font-style: italic;
+  color: rgb(68, 68, 68);
+}
+
+/*from W3 Schools */
+.button:hover {
+  background-color: rgb(68, 184, 167);
+  color: rgb(255, 226, 32);
+}
+
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: rgba(68, 184, 167, .5);
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.connect {
+  display: flex;
+  flex-direction: row;
+}
+
+.connect li {
+  margin: 1vw;
+  font-size: 2em;
+}
+
+footer ul li:first-of-type {
+  color: rgb(255, 255, 255);
+  font-size: 1.25rem;
+}
+
+footer a:link {
+  color: rgb(68, 68, 68);
+  text-decoration: none;
+}
+footer a:visited {
+  color: rgb(68, 184, 167);
+  text-decoration: none;
+}
+footer a:hover {
+  color: rgb(255, 226, 32);
+  text-decoration: none;
+}
+
+nav .icon {
+  display: none;
+}
+
+.smaller {
+  display: none;
+}
+
+.smallfooter{
+  display: none;
+}
+
+.stores a {
+  display: none;
+}
+@media screen and (max-width: 1200px) {
+  .help {
+    display: flex;
+    flex-direction: column;
+    height: 25vh;
+  }
+  .callbutton {
+    width: 25vw;
+    margin-top: 5vh;
+  }
+
+}
+
+
+@media screen and (max-width: 1000px) {
+  nav li:not(:first-child){
+    display: none;
+  }
+  nav .icon {
+    display: inline;
+    float:right;
+    font-size: 5em;
+
+  }
+  .hide {
+    display: none;
+  }
+
+  .smaller{
+    display: inline;
+  }
+
+  .help {
+    display: flex;
+    flex-direction: column;
+    height: 35vh;
+  }
+
+  .callbutton{
+    width: 30vw;
+    margin-top: 15vh;
+    display: flex;
+
+  }
+  .stores {
+    height: 15vh;
+  }
+  .stores a {
+    display: block;
+    color: yellow;
+    text-decoration: none;
+  }
+
+  .service {
+    height: 0vh;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  .callbutton{
+    width: 40vw;
+    margin-top: 20vh;
+    display: flex;
+
+
+  }
+  .hide {
+      display: none;
+    }
+
+
+  footer a:not(.smallfooter){
+    display: none;
+  }
+
+  .smallfooter {
+    display: inline;
+  }
+
+  .shrink {
+    display: inline;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+}
